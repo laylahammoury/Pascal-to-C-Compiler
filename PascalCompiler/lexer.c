@@ -131,7 +131,6 @@ int lexan() /* lexical analyzer */
                 tokenval = p;
                 return symtable[p].token;
             }
-            //TODO:
             else if (t == '+' || t == '-') {
                 int p = 0, b = 0;
                 lexbuf[b] = t;

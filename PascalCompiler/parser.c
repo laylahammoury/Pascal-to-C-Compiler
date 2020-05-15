@@ -171,7 +171,6 @@ elseClause() {
     switch (lookahead)
     {
     case ELSE:
-        //TODO: fix the ELSE issue
         match(ELSE); emit(ELSE); statements(); 
         break;
     default:

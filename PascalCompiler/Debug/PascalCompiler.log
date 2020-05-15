@@ -1,1 +1,60 @@
-﻿  PascalCompiler.vcxproj -> C:\Users\Layla H\source\repos\PascalCompiler\Debug\PascalCompiler.exe
+﻿  lexer.c
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\lexer.c(38,30): warning C4013: 'error' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\lexer.c(43,27): warning C4013: 'lookup' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\lexer.c(45,31): warning C4013: 'insert' undefined; assuming extern returning int
+  parser.c
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(11,22): warning C4013: 'lexan' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(12,13): warning C4013: 'prog' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(18,11): warning C4013: 'header' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(18,22): warning C4013: 'declars' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(19,9): warning C4013: 'emit' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(20,10): warning C4013: 'block' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(20,19): warning C4013: 'match' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(39,15): warning C4013: 'varDeclars' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(43,19): warning C4013: 'varDeclaration' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(51,19): warning C4033: 'varDeclars' must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(53,19): warning C4033: 'varDeclars' must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(59,11): warning C4013: 'idList' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(60,9): warning C4013: 'type' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(61,14): warning C4013: 'printlist' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(80,34): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(81,19): warning C4033: 'idList' must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(99,15): warning C4033: 'type' must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(86,9): warning C4101: 't': unreferenced local variable
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(109,29): warning C4047: '!=': 'char *' differs in levels of indirection from 'int'
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(117,19): warning C4033: 'printlist' must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(125,15): warning C4013: 'statements' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(132,10): warning C4013: 'state' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(142,19): warning C4033: 'statements' must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(144,19): warning C4033: 'statements' must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(156,12): warning C4013: 'exp' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(161,58): warning C4013: 'elseClause' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(166,15): warning C4033: 'state' must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(190,19): warning C4033: 'expList' must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(195,12): warning C4013: 'simpExp' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(205,19): warning C4033: 'exp' must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(214,13): warning C4013: 'term' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(220,15): warning C4033: 'simpExp' must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(226,11): warning C4013: 'factor' undefined; assuming extern returning int
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(234,19): warning C4033: 'term' must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(252,15): warning C4033: 'factor' must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(266,15): warning C4013: 'error' undefined; assuming extern returning int
+  Generating Code...
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(22): warning C4716: 'prog': must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(40): warning C4716: 'declars': must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(36): warning C4716: 'header': must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(56): warning C4716: 'varDeclars': must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(63): warning C4716: 'varDeclaration': must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(102): warning C4716: 'type': must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(121): warning C4716: 'printlist': must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(129): warning C4716: 'block': must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(148): warning C4716: 'statements': must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(179): warning C4716: 'elseClause': must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(169): warning C4716: 'state': must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(208): warning C4716: 'exp': must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(223): warning C4716: 'simpExp': must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(237): warning C4716: 'term': must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(255): warning C4716: 'factor': must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(84): warning C4716: 'idList': must return a value
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\parser.c(267): warning C4716: 'match': must return a value
+  PascalCompiler.vcxproj -> C:\Users\Layla H\source\repos\PascalCompiler\Debug\PascalCompiler.exe

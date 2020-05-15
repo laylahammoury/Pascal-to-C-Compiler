@@ -11,10 +11,4 @@ x  = 10 ;
 {
 y  = 20 ;
 }
-if ( x > y ) 
-z  = x or y * 5 ;
-temp  = x1 or y and 5 ;
-z  = x + not y / 5 ;
-else
-z  = x - ( y + d ) ;
 }
