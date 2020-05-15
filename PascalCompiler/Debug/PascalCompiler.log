@@ -1,0 +1,6 @@
+﻿  emitter.c
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\emitter.c(42,24): warning C4473: 'fprintf' : not enough arguments passed for format string
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\emitter.c(42,24): message : placeholders and their parameters expect 4 variadic arguments, but 2 were provided
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\emitter.c(42,24): message : the missing variadic argument 3 is required by format string '%*d'
+C:\Users\Layla H\source\repos\PascalCompiler\PascalCompiler\emitter.c(42,24): message : this argument is used by a conversion specifier
+  PascalCompiler.vcxproj -> C:\Users\Layla H\source\repos\PascalCompiler\Debug\PascalCompiler.exe
