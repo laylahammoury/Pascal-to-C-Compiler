@@ -103,14 +103,14 @@ type() {
 
 printlist() {
     char temp = idlist[0][0];
-    emit(ID, temp);
+    emit('i', temp);// i for id
     for (int i = 1; i < IDMAX; i++)
     {
         if (idlist[i] != '0')
         {
             emit(',');
              temp = idlist[i][0];
-            emit(ID, temp);
+            emit('i', temp);// i for id
         }
         else {
            // fprintf(ofptr, "%c ", '\n');
@@ -135,6 +135,7 @@ statements() {
         {
         case ';' :
             match(';');
+            emit(';');
             state();
             break;
         case END:
@@ -150,11 +151,14 @@ state() {
     switch (lookahead)
     {
     case ID:
-        match(ID); match(ASSIGNOP); exp(); break;
+        emit(ID, tokenval); match(ID);
+        emit(ASSIGNOP, tokenval); match(ASSIGNOP);
+        exp(); break;
     case BEGIN:
        block(); break;
     case IF:
-        match(IF); exp(); match(THEN); statements(); elseClause(); break;
+        match(IF); emit(IF); emit('('); exp(); emit(')');
+        match(THEN); emit(THEN); statements(); elseClause(); break;
     case WHILE:
         match(WHILE); exp(); match(DO); state(); break;
     default:
@@ -166,7 +170,7 @@ elseClause() {
     {
     case ELSE:
         //TODO: fix the ELSE issue
-        match(ELSE); statements();
+        match(ELSE); emit(ELSE); statements();
         break;
     default:
         break;
@@ -192,6 +196,7 @@ exp() {
         switch (lookahead)
         {
         case RELOP:
+            emit(RELOP, tokenval);
             match(RELOP);
             simpExp();
             break;
@@ -204,7 +209,9 @@ simpExp() {
     switch (lookahead)
     {
     case ADDOP:
-        match(ADDOP); term(); break;
+        
+        emit(ADDOP, tokenval);match(ADDOP);
+        term(); break;
     case ID: case NUM: case '(': case NOT:
         term();
         while (1) {
@@ -229,6 +236,7 @@ term() {
         switch (lookahead)
         {
         case MULOP:
+            emit(MULOP, tokenval);
             match(MULOP); factor(); break;
         default:
             return;
@@ -239,13 +247,15 @@ factor() {
     switch (lookahead)
     {
     case ID:
-        match(ID);break;
+        emit(ID, tokenval); match(ID);break;
     case NUM:
-        match(NUM);break;
+        emit(NUM, tokenval); match(NUM);break;
     case '(':
-        match('('); exp(); match(')'); break;
+        emit('('); match('(');
+        exp();
+        emit(')');match(')'); break;
     case NOT:
-        match(NOT); factor(); break;
+        emit(NOT, tokenval); match(NOT); factor(); break;
     default:
         return;
     }

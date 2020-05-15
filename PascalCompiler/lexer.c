@@ -45,6 +45,7 @@ int lexan() /* lexical analyzer */
                     p = insert(lexbuf, ID);
                 tokenval = p;
                 return symtable[p].token;
+                return symtable[p].token;
             }//end of isalpha
             else if (t == '<')
             {
