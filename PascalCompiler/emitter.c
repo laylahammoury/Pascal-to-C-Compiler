@@ -18,6 +18,12 @@ int t, tval;
     case 'm':
         fprintf(ofptr, "%s\n", "int main(void)"); break;
     case RELOP:
+         
+        if (strcmp(symtable[tval].lexptr, "<>") == 0)
+        {
+        fprintf(ofptr, "%s ", "!="); break;
+        }
+        else
         fprintf(ofptr, "%s ", symtable[tval].lexptr); break;
     case MULOP:
         fprintf(ofptr, "%s ", symtable[tval].lexptr); break;
@@ -32,7 +38,7 @@ int t, tval;
     case BEGIN:
         fprintf(ofptr, "{\n"); break;
     case END:
-        fprintf(ofptr, "\n}\n"); break;
+        fprintf(ofptr, "}\n"); break;
     case NUM:
         fprintf(ofptr, "%d ", tval); break;
     case ASSIGNOP:
@@ -43,10 +49,14 @@ int t, tval;
         fprintf(ofptr, "%s ", symtable[tval].lexptr); break;
     case IF:
         fprintf(ofptr, "%s ", "if"); break;
-    case THEN:
-        fprintf(ofptr, "%s\n ", ""); break;
+    case THEN: case DO:
+        fprintf(ofptr, "%s\n", ""); break;
     case ELSE:
         fprintf(ofptr, "%s\n", "else"); break;
+    case NOT:
+        fprintf(ofptr, "%s ", "not"); break;
+    case WHILE:
+        fprintf(ofptr, "%s ", "while"); break;
 
     default:
         fprintf(ofptr, "token %d, tokenval %*d, tokenval %d\n", t, tval);

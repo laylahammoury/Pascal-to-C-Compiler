@@ -135,7 +135,7 @@ statements() {
         {
         case ';' :
             match(';');
-            emit(';');
+           
             state();
             break;
         case END:
@@ -153,24 +153,26 @@ state() {
     case ID:
         emit(ID, tokenval); match(ID);
         emit(ASSIGNOP, tokenval); match(ASSIGNOP);
-        exp(); break;
+        exp(); emit(';'); break;
     case BEGIN:
        block(); break;
     case IF:
         match(IF); emit(IF); emit('('); exp(); emit(')');
         match(THEN); emit(THEN); statements(); elseClause(); break;
     case WHILE:
-        match(WHILE); exp(); match(DO); state(); break;
+        match(WHILE); emit(WHILE);  emit('('); exp(); emit(')');
+        match(DO); emit(DO); state(); ;break;
     default:
         return;
     }
+   
 }
 elseClause() {
     switch (lookahead)
     {
     case ELSE:
         //TODO: fix the ELSE issue
-        match(ELSE); emit(ELSE); statements();
+        match(ELSE); emit(ELSE); statements(); 
         break;
     default:
         break;

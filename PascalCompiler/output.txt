@@ -5,15 +5,16 @@ int x,y,z;
 float a,b;
 int main(void)
 {
+while ( i != temp ) 
+value1  = 50 ;
 x  = 10 ;
 {
-y  = 20 
+y  = 20 ;
 }
-;
 if ( x > y ) 
- z  = x + y * 5 ;
-z  = x + token 274, tokenval            2683416, tokenval 2685788
-y / 5 ;
+z  = x or y * 5 ;
+temp  = x1 or y and 5 ;
+z  = x + not y / 5 ;
 else
-z  = x - ( y + d ) 
+z  = x - ( y + d ) ;
 }

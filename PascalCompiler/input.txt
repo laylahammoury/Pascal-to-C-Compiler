@@ -5,12 +5,16 @@ PROGRAM Example(Input, Output);
      X,Y,Z: integer;
      A,B: real;
   BEGIN
+  while i <> temp
+  do
+  value1 := 50;
     X:=10;
     Begin
     Y:=20
     End;
     IF X > Y THEN
-      Z:=X+Y*5;
+      Z:=X or Y*5;
+      temp:=X1 or Y And 5;
       Z:=X + not Y/5;
     ELSE
       Z:=X-(y+d)
