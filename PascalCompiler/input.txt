@@ -1,0 +1,17 @@
+PROGRAM Example(Input, Output);
+  VAR
+     X,Y,Z: integer;
+     A,B: real;
+     X,Y,Z: integer;
+     A,B: real;
+  BEGIN
+    X:=10;
+    Begin
+    Y:=20
+    End;
+    IF X > Y THEN
+      Z:=X+Y*5;
+      Z:=X+ not Y*5;
+    ELSE
+      Z:=X-(y+d)
+      END.
