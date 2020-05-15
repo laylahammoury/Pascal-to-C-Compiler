@@ -11,7 +11,7 @@ PROGRAM Example(Input, Output);
     End;
     IF X > Y THEN
       Z:=X+Y*5;
-      Z:=X+ not Y*5;
+      Z:=X + not Y/5;
     ELSE
       Z:=X-(y+d)
       END.

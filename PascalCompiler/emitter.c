@@ -7,8 +7,8 @@ int t, tval;
 {
 
     switch (t) {
-    /*case '+':*/ case '-': case '*': case '/':
-        fprintf(ofptr, "%c ", t); break;
+    /*case '+': case '-': case '*': case '/':
+        fprintf(ofptr, "%c ", t); break;*/
     case ',':
         fprintf(ofptr, "%c", t); break;
     case ';':

@@ -209,20 +209,11 @@ simpExp() {
     switch (lookahead)
     {
     case ADDOP:
-        
-        emit(ADDOP, tokenval);match(ADDOP);
+        emit(ADDOP, tokenval); match(ADDOP);
         term(); break;
     case ID: case NUM: case '(': case NOT:
         term();
-        while (1) {
-            switch (lookahead)
-            {
-            case ADDOP:
-                match(ADDOP); term(); break;
-            default:
-                return;
-            }
-        }
+        simpExp();
         break;
     default:
         return;

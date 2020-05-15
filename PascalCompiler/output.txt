@@ -11,9 +11,9 @@ y  = 20
 }
 ;
 if ( x > y ) 
- z  = x y * 5 ;
-z  = x token 274, tokenval           12710472, tokenval 12712628
-y * 5 ;
+ z  = x + y * 5 ;
+z  = x + token 274, tokenval            2683416, tokenval 2685788
+y / 5 ;
 else
-z  = x ( y d ) 
+z  = x - ( y + d ) 
 }
