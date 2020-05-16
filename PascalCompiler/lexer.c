@@ -19,7 +19,6 @@ int lexan() /* lexical analyzer */
             lineno = lineno + 1;
             else if (isdigit(t))
             { /* t is a digit */
-            //TODO: add the    optional_fractional  and  optional_exponent  
                 ungetc(t, ifptr);
                 fscanf_s(ifptr, "%d", &tokenval);
                 return NUM;
